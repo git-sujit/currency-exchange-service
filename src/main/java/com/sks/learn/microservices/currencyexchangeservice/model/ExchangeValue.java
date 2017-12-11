@@ -2,7 +2,12 @@ package com.sks.learn.microservices.currencyexchangeservice.model;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class ExchangeValue {
+	@Id
 	private Long id;
 	private String fromCurrency;
 	private String toCurrency;
